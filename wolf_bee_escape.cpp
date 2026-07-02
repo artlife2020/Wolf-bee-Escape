@@ -28,3 +28,19 @@ int main() {
             stamina--;
             distance += 8;
         } else {
+            std::cout << "You found a resting spot.\n";
+            stamina++;
+            distance += 5;
+        }
+
+        std::cout << "Distance: " << distance << "\n";
+        std::cout << "Stamina: " << stamina << "\n";
+    }
+
+    if (distance >= 60)
+        std::cout << "\nYou escaped the forest!\n";
+    else
+        std::cout << "\nThe journey has ended.\n";
+
+    return 0;
+}
